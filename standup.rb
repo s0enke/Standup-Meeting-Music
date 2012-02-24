@@ -1,5 +1,5 @@
 #!/usr/bin/ruby
-songs = File.open("Standupfile").readlines.each{|song|song.chomp! }
+songs = File.open(File.join(File.dirname(__FILE__), "Standupfile")).readlines.each{|song|song.chomp! }
 random_song = songs[rand(songs.size)]
 
 play_time = ARGV[0].to_i || 10

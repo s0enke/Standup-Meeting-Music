@@ -1,4 +1,4 @@
-Simple ruby script which starts a firefox instance in Xvfb and plays a random video from "Standupfile"
+Simple ruby script which starts a Chromium instance in Xvfb and plays a random video from "Standupfile"
 
 inspired by http://scrumburg.wordpress.com/2011/11/13/wake-up-call-fur-das-daily-scrum/
 

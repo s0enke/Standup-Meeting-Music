@@ -7,9 +7,9 @@ xvfb = Process.fork do
     exec "Xvfb :99 -ac"
 end
 
-firefox = Process.fork do
+browser = Process.fork do
     exec "DISPLAY=:99 chromium-browser #{random_song}"
 end
 sleep play_time
-Process.kill "TERM", firefox
+Process.kill "TERM", browser
 Process.kill "TERM", xvfb
